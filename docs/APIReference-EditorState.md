@@ -249,6 +249,10 @@ static createWithContent(
 Returns a new `EditorState` object based on the `ContentState` and decorator
 provided.
 
+Warning: If you create a new ContentState, and you wish to retain SelectionState when creating new EditorState,
+you should use Editor.set(oldEditorState,{currentContentState: theCurrentContentState }) as shown in the media
+example.
+
 ### create
 
 ```
